@@ -1,0 +1,129 @@
+/*main.css*/
+
+/*tipografias*/
+@import url('https://fonts.googleapis.com/css?family=Heebo|Righteous|Permanent+Marker');
+.tipografia-titulo {
+	font-family: 'Righteous', cursive;
+}
+.tipografia-texto {
+	font-family: 'Heebo', sans-serif;
+}
+.tipografia-proyecto {
+	font-family: 'Permanent Marker', cursive;
+}
+
+/*texto de colores*/
+.txt-blanco {
+	color: #fff;
+}
+.txt-gris {
+	color: #333;
+}
+
+/*Colores de fondo*/
+.fondo-gris {
+	background-color: #333;
+}
+.fondo-grd-rosa {
+	background-image: linear-gradient(to bottom, #c05e6a 0%, #df8693 60%, #df8693 100%);
+}
+.fondo-grd-verde {
+	background-image: linear-gradient(to bottom, #478195 0%, #6babbe 60%, #6babbe 100%);
+}
+.fondo-grd-azul {
+	background-image: linear-gradient(to bottom, #4c75a1 0%, #6895bf 60%, #6895bf 100%);
+}
+.fondo-grd-morado {
+	background-image: linear-gradient(to bottom, #87629a 0%, #a981b6 60%, #a981b6 100%);
+}
+.fondo-grd-naranja {
+	background-image: linear-gradient(to bottom, #c1674e 0%, #d68b71 60%, #d68b71 100%);
+}
+
+.txt-1 {
+	font-size: 1.2rem;
+}
+
+div.cover {
+	height: 100vh;
+	background-image: url("https://cdn2.macworld.co.uk/cmsdata/features/3464816/apple_imac_201706.jpg");
+	background-size: cover;
+}
+
+/*secciones de la página*/
+.seccion-entrada {
+	background-color: #333;
+	color: white;
+
+}
+.seccion-tecnologias {
+	background-color: #FFF;
+}
+
+.seccion-proyectos {
+	background-color: #333;
+}
+.proyectos a {
+	color: #444;
+	font-weight: bold;
+}
+.proyectos a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+	.seccion-entrada {
+		background-position: calc(50% + 270px) calc(100% + -57px);
+	}
+}
+
+/*Cambios al código Bootstrap*/
+.list-group-item {
+	background-color: transparent !important;
+	border-top: 2px solid #ddd;
+}
+
+#separador {
+	background-color: #FFF;
+	margin-bottom: -7px;
+}
+#separador-inverso {
+	background-color: #FFF;
+	margin-bottom: -7px;
+}
+#separador path {
+	fill: #333333;
+}
+#separador-inverso path {
+	fill: #333 !important;
+}
+
+.ir-arriba {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+.wrapper .sliding-background {
+	background: url("../img/imagen-slide.png") repeat-x;
+  height: 200px;
+  width: 5076px;
+  animation: slide 10s linear infinite;
+}
+@keyframes slide{
+  0%{
+    transform: translate3d(-1692px, 0, 0);
+    
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+  }
+}

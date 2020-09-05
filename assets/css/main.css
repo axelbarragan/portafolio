@@ -10,6 +10,7 @@
 }
 .tipografia-proyecto {
 	font-family: 'Permanent Marker', cursive;
+	word-break: break-word;
 }
 
 /*texto de colores*/
